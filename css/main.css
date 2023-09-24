@@ -1,0 +1,9 @@
+@import './partes/style.css'; /* IMportação de todas as partes */
+@import './global/global.css'; /* IMportação de todas as partes globais */
+
+#none{
+  display: none !important;
+}
+.none{
+  display: none !important;
+}

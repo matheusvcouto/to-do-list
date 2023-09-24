@@ -1,0 +1,70 @@
+#edit-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 5rem;
+
+    border-radius: 0px 0px 10px 10px;
+
+    position: absolute;
+    bottom: 0rem;
+    background-color: var(--cor-principal-claro);
+
+    z-index: 100;
+
+}
+
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#edit-input{
+    background-color: var(--cor-branco);
+    border-color: var(--cor-branco);
+}
+
+#edit-input:hover{
+    background-color: var(--cor-principal-claro);
+    border-color: var(--cor-principal);
+}
+
+#edit-form #submit {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background: var(--cor-principal);
+}
+
+#edit-form #submit:hover{
+    background-color: var(--cor-principal-hover);
+}
+
+#edit-form #cancel-edit-btn {
+    display: flex;
+    color: var(--cor-branco);
+
+    height: 3rem;
+    width: 5.5rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background: var(--cor-principal);
+}
+
+#edit-form #cancel-edit-btn:hover {
+    background: var(--cor-principal-hover);
+}
+
+
+

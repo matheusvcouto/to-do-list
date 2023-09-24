@@ -1,0 +1,11 @@
+/* CSS global que importa todos os outros CSS */
+@import './fonts.css';
+@import './normalize.css';
+@import './scrollbar.css';
+@import './variables.css';
+@import './animate.css';
+
+body *{
+    transition: all 0.3s ease;
+
+}

@@ -1,0 +1,110 @@
+
+header{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+header * {
+    transition: all 0.3s ease;
+}
+
+header #header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* pesquisa */
+
+form .search{
+    display: flex;
+    justify-content: space-between;
+    width: 256px;
+    height: 3rem;
+    background-color: var(--cor-cinza-claro);
+    padding-left: 1rem;
+    position: relative;
+    border: var(--borda);
+    border-radius: 10px;
+}
+
+form .search input{
+    background-color: var(--cor-cinza-claro);
+
+}
+
+form .search button{
+    top: 50%; 
+    right: 0.5rem; /* Alinha o elemento ao centro horizontalmente */
+    transform: translate(-50%, -50%); /* Desloca o elemento para o centro exato */
+    border-radius: 10px;    
+    background-color: var(--cor-cinza-claro);
+    position: absolute  ;
+}
+
+form .search button svg{
+    fill: var(--cor-preto-cinza);
+    width: 1rem;
+    height: 1rem;
+}
+
+
+form .search:hover button{
+    background-color: var(--cor-principal-claro);
+}
+
+form .search:hover{
+    background-color: var(--cor-principal-claro);
+    border: var(--borda-hover);
+}
+
+form .search:hover input{
+    background-color: var(--cor-principal-claro);
+}
+
+form .search:hover button svg{
+    fill: var(--cor-principal);
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/* Filter */
+
+select{
+    margin-right: -4px;
+    padding: 10px 1rem !important;
+}
+
+select option:checked {
+    background-color: var(--cor-principal);
+    color: #fff;
+
+}
+
+/* nome da lista */
+
+.nomeLista{
+    background-color: var(--cor-cinza-claro);
+    width: 412px;
+    height: 3.5rem;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+
+    color: var(--cor-principal);
+    font-size: 1.3rem;
+}
+
+
+.nomeLista img{
+    width: 1.3rem;
+    height: 1.3rem;
+}

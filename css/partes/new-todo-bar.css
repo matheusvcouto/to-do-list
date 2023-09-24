@@ -1,0 +1,60 @@
+.new-todo{
+    border-top: 3px solid var(--cor-cinza-claro);
+    padding-top: 1rem;
+
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+    bottom: 1rem;
+}
+#todo-form{
+    display: flex;
+    gap: 10px;
+
+}
+
+.new-todo * {
+    transition: all 0.3s ease;
+}
+ 
+
+.new-todo input {
+    width: 47px;
+    height: 47px;
+    padding-left: 1rem;
+    width: 355px;
+    border-radius: 10px;
+    background-color: var(--cor-cinza-claro);
+    border: 3px solid var(--cor-cinza-claro);
+
+}
+
+
+.new-todo input:hover{
+    background-color: var(--cor-principal-claro);
+    border-color:  var(--cor-principal);
+}
+
+.new-todo button{
+    display: flex;
+    width: 47px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background: var(--cor-principal);
+
+}
+
+
+.new-todo button:hover{
+    background-color: var(--cor-principal-hover);
+
+}
+

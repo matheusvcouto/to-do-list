@@ -1,0 +1,136 @@
+#task-list{
+    height: 411px;
+    overflow-y: scroll;
+    overflow-y: scroll;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--cor-branco);
+    padding-left: 4px;
+}
+#task-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#todo-list {
+    display: flex;
+    width: 450px;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#todo-list button {
+    display: flex;
+    align-items: center;
+}
+
+.tarefa {
+    width: 310px;
+    height: 3rem;
+    border-radius: 10px;
+
+    background-color: var(--cor-cinza-claro);
+
+    display: flex;    
+    gap: 0.6rem;
+    align-items: center;
+    padding: 11px 16px;
+}
+
+.tarefa h3 {
+    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    color: var(--cor-preto-cinza)   ;
+}
+.tarefa .finish-todo {
+    background-color: transparent;
+}
+
+
+.tarefa #svg-tarefa {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*estilização do svg  */
+
+.tarefa #svg-tarefa #fundo {
+    fill: var(--cor-branco);
+
+}
+
+
+.tarefa #svg-tarefa #borda {
+    fill: var(--cor-principal);
+
+}
+
+.tarefa #svg-tarefa #check {
+    fill: var(--cor-branco);
+
+}
+
+/*
+.tarefa:hover{
+    background-color: var(--cor-principal-claro);
+    cursor: pointer;
+}
+
+.tarefa:hover #svg-tarefa #check {
+    fill: var(--cor-principal);
+}
+
+*/
+
+
+.tarefa:hover{
+    background-color: var(--cor-principal-claro);
+    cursor: default;
+}
+.tarefa button:hover #svg-tarefa #check {
+    fill: var(--cor-principal);
+    cursor: pointer;
+}
+/* quando tiver conlido entrar a classe done ao lado da classe tarefa */
+
+.done{
+    background-color: var(--cor-principal);
+    animation-delay: 1s;
+}
+
+.done h3{
+    color: var(--cor-branco);
+    text-decoration: line-through;
+}
+
+.done #svg-tarefa #fundo {
+    fill: var(--cor-branco);
+
+}
+
+
+.done #svg-tarefa #borda {
+    fill: var(--cor-branco);
+
+}
+
+.done #svg-tarefa #check {
+    fill: var(--cor-principal);
+}
+
+.done:hover{
+    background-color: #774ae0;
+
+}
+
+
+.done button:hover #svg-tarefa #check {
+    fill: var(--cor-principal-hover);
+}
+
+.done button:hover #svg-tarefa #borda {
+    fill: var(--cor-branco);
+}

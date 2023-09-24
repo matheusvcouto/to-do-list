@@ -1,0 +1,68 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição das coisas */
+:root {
+
+  /* Variáveis de Cores */
+  --cor-branco: #FFFFFF;
+  --cor-cinza-claro: #F1F1F1;
+  --cor-preto: #000000;
+  --cor-preto-cinza: #4D4D4D;
+  --cor-principal: #8257E5;
+  --cor-principal-hover: #5930B6;
+  --cor-principal-claro: #e6e2f0;
+
+  /* Variáveis de Fontes */
+  --Bai-Jamjuree: 'Bai Jamjuree', sans-serif;
+  --Inter: 'Inter', sans-serif;
+
+  /*bordar*/
+  --borda: 3px solid var(--cor-cinza-claro);
+  --borda-hover: 3px solid var(--cor-principal);
+}
+
+
+
+
+.destaque{
+  background-color: var(--cor-cinza-claro);
+  border: var(--borda);
+  border-radius: 10px;
+  padding: 11px 16px;
+}
+
+.destaque input{
+  background-color: var(--cor-cinza-claro);
+}
+.destaque:hover input{
+  background-color: var(--cor-principal-claro);
+}
+
+.destaque:hover{
+  background-color: var(--cor-principal-claro);
+  border: var(--borda-hover);
+}
+
+.destaque button svg {
+  fill: var(--cor-preto-cinza);
+  background-color: var(--cor-cinza-claro);
+}
+
+.destaque:hover button svg {
+  fill: var(--cor-principal);
+  background-color: var(--cor-principal-claro);
+}
+
+
+.btn-ico{
+  display: flex;
+  width: 47px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background: var(--cor-principal);
+}
+
+.btn-ico:hover{
+  background-color: var(--cor-principal-hover);
+}
